@@ -7,23 +7,23 @@ class OrderModel {
   }
 
   get() {
-    return database.getList("orderlist");
+    return database.getList("order");
   }
 
   getById(id) {
-    return database.get("orderlist", id);
+    return database.get("order", id);
   }
 
   create(quote) {
-    return database.create("orderlist", quote);
+    return database.create("order", quote);
   }
 
   delete(id) {
-    return database.delete("orderlist", id);
+    return database.delete("order", id);
   }
 
   update(id, quote) {
-    return database.set("orderlist", id, quote);
+    return database.set("order", id, quote);
   }
 }
 

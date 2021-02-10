@@ -7,23 +7,23 @@ class ItemModel {
   }
 
   get() {
-    return database.getList("itemlist");
+    return database.getList("item");
   }
 
   getById(id) {
-    return database.get("itemlist", id);
+    return database.get("item", id);
   }
 
   create(quote) {
-    return database.create("itemlist", quote);
+    return database.create("item", quote);
   }
 
   delete(id) {
-    return database.delete("itemlist", id);
+    return database.delete("item", id);
   }
 
   update(id, quote) {
-    return database.set("itemlist", id, quote);
+    return database.set("item", id, quote);
   }
 }
 
