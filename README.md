@@ -1,2 +1,2 @@
-# polus-backend
+# closet-backend
 for backend
